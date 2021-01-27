@@ -38,6 +38,35 @@ $(document).ready(function () {
 #### Podczas wypełniania wszystkich pól po lewej stronie zostanie podświetlone napis:
 ![form](php/rejestracja1.jpg)
 
+#### zapamiętanie aktualnego stanu serwisu
+
+```
+<?php	
+	if ( !empty( $_SESSION['youname']) && !empty( $_SESSION['userid'])){
+		if (!empty( $_GET["add"]) ){
+			setcookie("youname", $_SESSION['youname'], time() + 60 * 60 * 24 * 5, "/"); //5 days
+			setcookie("userid", $_SESSION['userid'] , time() + 60 * 60 * 24 * 5, "/"); //5 days	
+			$_SESSION['cartp'] = [];
+			setcookie("cartp", null , time() + 60 * 60 * 24 * 5, "/"); //5 days	
+		}
+	}else{
+		$_SESSION['youname'] = 'Guest';
+		$_SESSION['userid'] = '000';
+		$_SESSION['cartp'] = [];	
+		setcookie("cartp", null , time() + 60 * 60 * 24 * 5, "/"); //5 days		
+	}	
+	if (!empty( $_GET["exit"]) ){
+		$_SESSION = array();
+		setcookie("youname", '', time() - 60 * 60 * 24 * 5, '/');
+		setcookie("userid", '', time() - 60 * 60 * 24 * 5, '/');
+		$_SESSION['youname'] = 'Guest';
+		$_SESSION['userid'] = '000';	
+		$_SESSION['cartp'] = [];
+		setcookie("cartp", null , time() + 60 * 60 * 24 * 5, "/"); //5 days
+	}	
+
+?>
+```
 ### Logowanie
 #### Zalogować się użytkownik może w tym formularze 
 ![form](php/logowanie.jpg)
@@ -56,4 +85,13 @@ $(document).ready(function () {
 ####  Po kliknięciu dowolnego zdjęcia z galerii, użytkownik może zapisać ją dla siebie
 ![galeria](php/selected.jpg)
 
+#### Zapisane zdjęcia są w "Show choose"
+![galeria](php/selected3.jpg)
+#### Również jest funkcja usunięcia
+![galeria](php/selected2.jpg)
 
+### Wyszukiwarka
+#### Funkcja wyszukiwania znajduje się w "Seek by name photo"
+![galeria](php/wyszukiw.jpg)
+#### Z pomocą ajax znajdujemy zdjecie po nazwie
+![galeria](php/wyszukiw1.jpg)
