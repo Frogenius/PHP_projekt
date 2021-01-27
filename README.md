@@ -95,3 +95,16 @@ $(document).ready(function () {
 ![galeria](php/wyszukiw.jpg)
 #### Z pomocą ajax znajdujemy zdjecie po nazwie
 ![galeria](php/wyszukiw1.jpg)
+
+
+### Funkcyjna implementacja wzorca MVC
+![mvc](php/mvcG.jpg)
+![mvca](php/mvcA.jpg)
+
+#### MVC zawierająca: 
+* front-controller
+* routing
+* kontrolery
+* model
+* widoki 
+* wydzielona logika biznesowa
