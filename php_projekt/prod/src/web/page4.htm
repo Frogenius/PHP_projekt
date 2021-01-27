@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+ <head>
+       <title>Rock clambing</title>                               
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css"/>
+    <link href="./js/jquery-ui.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="./js/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="./js/myscript.js"></script>
+    <link rel="import" href="menu.htm">
+  <script type="text/javascript">
+      $(document).ready(function () {
+
+          $("h2").append('<em></em>');
+
+          $(".thumbs a").click(function () {
+
+              var largePath = $(this).attr("href");
+              var largeAlt = $(this).attr("title");
+
+              $("#largeImg").attr({ src: largePath, alt: largeAlt });
+
+              $("h2 em").html(" (" + largeAlt + ")"); return false;
+          });
+
+      });
+      
+</script>
+
+
+
+ </head>
+ <body>
+  <div class="pagec">
+  <script type="text/javascript">
+
+      var link = document.querySelector('link[rel=import]');
+
+      var content = link.import.querySelector('#nav');
+
+      document.body.appendChild(content.cloneNode(true)); 
+
+
+ 
+    </script>  
+   
+   
+    <div class="content">
+        <div class="content_in">
+         
+         
+         <div class="page-header">
+
+            <h2>Nasze wyczyny<em></em></h2>
+
+            <p><img id="largeImg" src="./img/11.jpg" alt="Image 4"></p>
+
+            <p class="thumbs">
+	            <a href="./img/11.jpg" title="Image 2"><img alt="1" src="./img/2.jpg"></a>
+	            <a href="./img/33.jpg" title="Image 3"><img alt="2" src="./img/3.jpg"></a>
+	            <a href="./img/ss.jpg" title="Image 4"><img alt="3" src="./img/s.jpg"></a>
+	            <a href="./img/44.jpg" title="Image 5"><img alt="4" src="./img/4.jpg"></a>
+	            <a href="./img/ll.jpg" title="Image 6"><img alt="5" src="./img/l.jpg"></a>
+                <a href="./img/ee.jpg" title="Image 6"><img alt="6" src="./img/e.jpg"></a>
+                <a href="./img/00.jpg" title="Image 6"><img alt="7" src="./img/0.jpg"></a>
+            </p>
+        </div>
+
+        </div>
+    </div>
+    </div>
+      <script type="text/javascript">
+
+          var link = document.querySelector('link[rel=import]');
+
+          var content = link.import.querySelector('#futercl');
+
+          document.body.appendChild(content.cloneNode(true)); 
+
+        </script>
+
+ </body>
+</html>
