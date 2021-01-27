@@ -1,5 +1,4 @@
 # PHP_projekt
-# Avolorfi
 
 ## Projekt zaliczeniowy przedmiotu Interaktywne serwisy internetowу - Serwer dla amatorów wspinaczki
 > celem projektu jest kolekcjonowanie zdjęć sportowców zarejestrowanych na portalu. Użytkownicy mogą dodawać swoi zdjecia na portal w sposób publiczny i priwatny. A także zapisywać zdjęcia innych użytkowników
@@ -21,11 +20,11 @@
 ### Strona startowa
 ![index](php/index.jpg)
 #### Tutaj znajduje się  ciekawy script z pomocą którego możemy przenosić obiekt (gdzie w css position: absolute)
-``
+```
 $(document).ready(function () { 
     $(".muvediv").draggable({ cursor: "move" });
 });
-``
+```
 ![index](php/prz.jpg)
 
-![index](php/index.jpg)
+
