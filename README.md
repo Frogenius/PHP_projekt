@@ -17,14 +17,15 @@
 * AJAX – wyszukiwarka zdjęć 
 * Funkcyjna implementacja wzorca MVC
 
-#### Wszyscy strony zawiera funkcją rozciągania gry na caly ekran
-``
-Window w = getWindow();
-w.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-``
-
 
 ### Strona startowa
-#### Zawiera przycisk włączenia i wyłączenia muzyki i Przycisk starta gry
+![index](php/index.jpg)
+#### Tutaj znajduje się  ciekawy script z pomocą którego możemy przenosić obiekt (gdzie w css position: absolute)
+``
+$(document).ready(function () { 
+    $(".muvediv").draggable({ cursor: "move" });
+});
+``
+![index](php/prz.jpg)
 
-![alt text](android/1.jpg)
+![index](php/index.jpg)
