@@ -1,13 +1,13 @@
 # PHP_projekt
 
-## Projekt zaliczeniowy przedmiotu Interaktywne serwisy internetowу - Serwer dla amatorów wspinaczki
-> celem projektu jest kolekcjonowanie zdjęć sportowców zarejestrowanych na portalu. Użytkownicy mogą dodawać swoi zdjecia na portal w sposób publiczny i priwatny. A także zapisywać zdjęcia innych użytkowników
+## Projekt zaliczeniowy przedmiotu Interaktywne serwisy internetowe - Serwer dla amatorów wspinaczki
+> celem projektu jest kolekcjonowanie zdjęć sportowców zarejestrowanych na portalu. Użytkownicy mogą dodawać swoje zdjecia na portal w jako publiczne i prywatne, a także zapisywać zdjęcia innych użytkowników.
 
 ### Projekt zawiera: 
 * Zapisywanie wartości z formatek do bazy danych
 * Mechanizm uwierzytelniania
 * Wdrożenie na serwerze WWW
-* Worzenie widoków w sposób komponentowy
+* Tworzenie widoków w sposób komponentowy
 * Zastosowanie biblioteki JS
 * Zastosowanie biblioteki CSS/Estetyka wykonania warstwy widoków
 * Przesyłanie plików na serwer
@@ -19,7 +19,7 @@
 
 ### Strona startowa
 ![index](php/index.jpg)
-#### Tutaj znajduje się  ciekawy script z pomocą którego możemy przenosić obiekt (gdzie w css position: absolute)
+#### Tutaj znajduje się skrypt, z pomocą którego możemy przenosić obiekt (gdzie w css position: absolute).
 ```
 $(document).ready(function () { 
     $(".muvediv").draggable({ cursor: "move" });
@@ -28,14 +28,14 @@ $(document).ready(function () {
 ![index](php/prz.jpg)
 
 
-#### Poprzez kliknięcie na przycisk rejestracji (z ruchomym napisem) - idziemy do strony formularza 
+#### Poprzez kliknięcie na przycisk rejestracji (z ruchomym napisem) - idziemy do strony formularza. 
 
 ### Formularz rejestracyjny
 ![form](php/rejestracja.jpg)
 
-#### Na dole formularza widzimy już zarejestrowanych użytkowników w bazie danych
+#### Na dole formularza widzimy już użytkowników zarejestrowanych w bazie danych.
 ![form](php/rejestracja2.jpg)
-#### Podczas wypełniania wszystkich pól po lewej stronie zostanie podświetlone napis:
+#### Po wypełnianiu wszystkich pól po lewej stronie zostanie wyświetlone imię użytkownika.
 ![form](php/rejestracja1.jpg)
 
 #### zapamiętanie aktualnego stanu serwisu
@@ -68,32 +68,32 @@ $(document).ready(function () {
 ?>
 ```
 ### Logowanie
-#### Zalogować się użytkownik może w tym formularze 
+#### Użytkownik może się zalogować za pomocą tego formularza: 
 ![form](php/logowanie.jpg)
 
 ### Galeria zdjęć
 ![galeria](php/galeria.jpg)
-#### Niezarejestrowani użytkownicy mogą oglądać galerię, ale tylko u zarejestrowanych wyświetla się funkcja dodawania
+#### Niezarejestrowani użytkownicy mogą oglądać galerię, ale tylko u zarejestrowanych wyświetla się funkcja dodawania.
 ![galeria](php/dodacZd.jpg)
-#### Pliki mogą być tylko w formacie PNG lub JPG, nie więcej niż 1 MB. Jeśli użytkownik spróbuje wysłać zdjęcie o większym rozmiarze lub w innym formacie, powinien otrzymać stosowny komunikat
+#### Pliki mogą być tylko w formacie PNG lub JPG, nie większe niż 1 MB. Jeśli użytkownik spróbuje wysłać zdjęcie o większym rozmiarze lub w innym formacie, powinien otrzymać stosowny komunikat o błędzie.
 
-#### Zawiera znak wodny (w prawej części zdjęcia na dole)
-#### Również możemy wybrać publikację prywatną lub publiczną
+#### Zawiera znak wodny (w prawej części zdjęcia na dole).
+#### Również możemy wybrać publikację prywatną lub publiczną.
 ![galeria](php/dodanieZd1.jpg)
-#### Użytkownik może zobaczyć dodane swoi zdjęcia w "show my"
+#### Użytkownik może zobaczyć dodane swoje zdjęcia w "show my".
 ![galeria](php/dodanieZd2.jpg)
-####  Po kliknięciu dowolnego zdjęcia z galerii, użytkownik może zapisać ją dla siebie
+####  Po kliknięciu dowolnego zdjęcia z galerii, użytkownik może zapisać ją dla siebie.
 ![galeria](php/selected.jpg)
 
-#### Zapisane zdjęcia są w "Show choose"
+#### Zapisane zdjęcia można odnaleźć w "Show choose".
 ![galeria](php/selected3.jpg)
-#### Również jest funkcja usunięcia
+#### Istnieje również funkcja usunięcia.
 ![galeria](php/selected2.jpg)
 
 ### Wyszukiwarka
-#### Funkcja wyszukiwania znajduje się w "Seek by name photo"
+#### Funkcja wyszukiwania znajduje się w "Seek by name photo".
 ![galeria](php/wyszukiw.jpg)
-#### Z pomocą ajax znajdujemy zdjecie po nazwie
+#### Z pomocą ajax znajdujemy zdjecie po nazwie.
 ![galeria](php/wyszukiw1.jpg)
 
 
@@ -107,4 +107,4 @@ $(document).ready(function () {
 * kontrolery
 * model
 * widoki 
-* wydzielona logika biznesowa
+* wydzieloną logikę biznesową
