@@ -75,6 +75,8 @@ $(document).ready(function () {
 #### Użytkownik może się zalogować za pomocą tego formularza: 
 ![form](php/logowanie.jpg)
 
+### Baza danych MongoDB
+![galeria](php/baza.jpg)
 ### Galeria zdjęć
 ![galeria](php/galeria.jpg)
 #### Niezarejestrowani użytkownicy mogą oglądać galerię, ale tylko u zarejestrowanych wyświetla się funkcja dodawania.
