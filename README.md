@@ -2,7 +2,7 @@
 
 ## Projekt zaliczeniowy przedmiotu Interaktywne serwisy internetowe - Serwer dla amatorów wspinaczki
 ### Grupa: S22-32
-### Autorzy: Hanna Zhuk, Eliza Sinkevich, Marcin Wiśniewski, Irina Frolova
+
 
 > celem projektu jest kolekcjonowanie zdjęć sportowców zarejestrowanych na portalu. Użytkownicy mogą dodawać swoje zdjecia na portal w jako publiczne i prywatne, a także zapisywać zdjęcia innych użytkowników.
 
