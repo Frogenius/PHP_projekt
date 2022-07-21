@@ -1,11 +1,16 @@
 # PHP_projekt
 
-## Projekt zaliczeniowy przedmiotu Interaktywne serwisy internetowe - Serwer dla amatorów wspinaczki
-### Grupa: S22-32
 
-
+> Целью проекта является реализация портала для скалолазов с возможностью регистрации и коллекционирования фотографий.
 > celem projektu jest kolekcjonowanie zdjęć sportowców zarejestrowanych na portalu. Użytkownicy mogą dodawać swoje zdjecia na portal w jako publiczne i prywatne, a także zapisywać zdjęcia innych użytkowników.
 
+### Портал содержит:
+* Сохранение данных пользователей и загружаемые фотографии в базу данных MongoDB
+* Механизм аутентификации
+* Подключение к серверу Apache
+* Использование JS, CSS, Ajax
+* Пример использования MVC
+* Галерею фотографий
 
 ### Projekt zawiera: 
 * Zapisywanie wartości z formatek do bazy danych
